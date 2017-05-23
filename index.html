@@ -1,0 +1,57 @@
+<html>
+    <head id="head">
+        <script src='dist/fabric.js'></script>
+        <script src="canvas_init.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body id="body" onmousemove="mouseMove(event)">
+    
+        <div onclick="drawShape();" class="centeredCanvas">
+            <canvas id='context' height="400" width="1600" style="border: 1px solid black;"></canvas>
+        </div>
+        
+        <script src='canvasDrawer.js'></script>
+        
+        <div class="buttonsShape">
+            <p> Sélection de la forme </p>
+            <button id="button_freeDrawing" onclick='choosingShape("freeDrawing");'> Dessin libre </button>
+            <button id="button_triangle" onclick='choosingShape("triangle");'> Triangle </button>
+            <button id='button_rectangle' onclick='choosingShape("rectangle");'> Rectangle </button>
+            <button id='button_circle' onclick='choosingShape("circle");'> Cercle </button>
+            <button id="button_ellipse" onclick='choosingShape("ellipse");'> Ellipse </button>
+            <button id="button_polygoneStar" onclick='choosingShape("etoile");'> Etoile </button>
+            <button id="button_polygoneFilled" onclick='choosingShape("polygon");'> Polygone </button>
+        </div>
+        <div class="buttonsColor">
+            <p> Sélection du contour </p>
+            <button id="strokeWhite" onclick='choosingStroke("white")'> Blanc </button>
+            <button id="strokeYellow" onclick='choosingStroke("yellow")'> Jaune </button>
+            <button id="strokeOrange" onclick='choosingStroke("orange")'> Orange </button>
+            <button id="strokeRed" onclick='choosingStroke("red")'> Rouge </button>
+            <button id="strokePink" onclick='choosingStroke("pink")'> Rose </button>
+            <button id="strokePurple" onclick='choosingStroke("purple")'> Violet </button>
+            <button id="strokeBlue" onclick='choosingStroke("blue")'> Bleu </button>
+            <button id="strokeGreen" onclick='choosingStroke("green")'> Vert </button>
+            <button id="strokeBrown" onclick='choosingStroke("brown")'> Brun </button>
+            <button id="strokeGrey" onclick='choosingStroke("grey")'> Gris </button>
+            <button id="strokeBlack" onclick='choosingStroke("black")'> Noir </button>
+        </div>
+        <div class="buttonsColor">
+            <p> Sélection du remplissage </p>
+            <button id="fillWhite" onclick='choosingFill("white")'> Blanc </button>
+            <button id="fillYellow" onclick='choosingFill("yellow")'> Jaune </button>
+            <button id="fillOrange" onclick='choosingFill("orange")'> Orange </button>
+            <button id="fillRed" onclick='choosingFill("red")'> Rouge </button>
+            <button id="fillPink" onclick='choosingFill("pink")'> Rose </button>
+            <button id="fillPurple" onclick='choosingFill("purple")'> Violet </button>
+            <button id="fillBlue" onclick='choosingFill("blue")'> Bleu </button>
+            <button id="fillGreen" onclick='choosingFill("green")'> Vert </button>
+            <button id="fillBrown" onclick='choosingFill("brown")'> Brun </button>
+            <button id="fillGrey" onclick='choosingFill("grey")'> Gris </button>
+            <button id="fillBlack" onclick='choosingFill("black")'> Noir </button>
+        </div>
+        
+        <div id='debug'></div>
+    </body>
+</html>

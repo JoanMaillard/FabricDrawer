@@ -1,0 +1,16 @@
+html, body
+{
+    margin: 0;
+}
+
+.centeredCanvas
+{
+    margin-top: 10px;
+    margin-left: calc(50% - 800px);
+    margin-bottom: 35px;
+}
+
+#context
+{
+    position:relative;
+}
